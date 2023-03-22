@@ -10,21 +10,18 @@ import {
 } from "react-bootstrap";
 
 export const Comments = (props) => {
-  const { id } = props;
+  const { id, type } = props;
   const [loading, setLoading] = useState(true);
   const [comments, setComments] = useState([]);
   const [filtered, setFiltered] = useState([]);
   useEffect(() => {
     initialize();
     getComments();
-    return () => {
-      setComments([]);
-    };
     // eslint-disable-next-line
   }, []);
   useEffect(() => {
-    localStorage.setItem("comments", JSON.stringify(comments));
     getComments();
+    comments.length > 0 && localStorage.setItem("comments", JSON.stringify(comments));
     // eslint-disable-next-line
   }, [comments]);
   const initialize = () => {
@@ -37,19 +34,21 @@ export const Comments = (props) => {
     setComments(JSON.parse(saved));
   };
   const getComments = () => {
-    const filter = comments?.filter((value) => value.id === id);
+    const filter = comments?.filter((value) => value.id === id && value.type === type);
     setFiltered(filter);
     setLoading(false);
   };
   const handleComment = (e) => {
     e.preventDefault();
+    const saved = JSON.parse(localStorage.getItem("comments"));
     const data = new FormData(e.target);
     const formData = {};
     for (let [key, value] of data) {
       formData[key] = value;
     }
     formData.id = id;
-    const c = [...comments];
+    formData.type = type;
+    const c = [...saved];
     c.push(formData);
     e.target.reset();
     setComments(c);

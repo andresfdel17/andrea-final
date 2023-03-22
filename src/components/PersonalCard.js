@@ -22,6 +22,9 @@ export const PersonalCard = () => {
           <Card.Title>{person?.name}</Card.Title>
           <Card.Text>{person?.desc}</Card.Text>
           <hr />
+          <Card.Title>Comments</Card.Title>
+          <Comments id={person?.id} type="personal" />
+          <hr/>
           <Card.Title>Movie Review</Card.Title>
           <Row>
             <Col sm="auto">
@@ -46,7 +49,7 @@ export const PersonalCard = () => {
           </Row>
           <hr/>
           <Card.Title>Comments</Card.Title>
-          <Comments id={person?.id} />
+          <Comments id={person?.id} type="movie" />
         </Card.Body>
       </Card>
     </Container>
