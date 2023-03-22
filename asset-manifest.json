@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/andrea-final/static/css/main.c2cab247.css",
+    "main.js": "/andrea-final/static/js/main.d39b9ee5.js",
+    "static/media/hf.jpg": "/andrea-final/static/media/hf.253387b7f67b81ab9330.jpg",
+    "static/media/molina.jpg": "/andrea-final/static/media/molina.cc1bb374182d1bc15aa4.jpg",
+    "static/media/jp.webp": "/andrea-final/static/media/jp.7c1d6a0f1697280a9618.webp",
+    "static/media/felipe.jpg": "/andrea-final/static/media/felipe.0c13b749c5de3a3573e9.jpg",
+    "static/media/mary.jpg": "/andrea-final/static/media/mary.e99985b92226c3ca2d55.jpg",
+    "static/media/camilo.jpg": "/andrea-final/static/media/camilo.9fc7abf460a34fb2722d.jpg",
+    "static/media/react.png": "/andrea-final/static/media/react.25803af39958a2cb9df1.png",
+    "static/media/dd.jpg": "/andrea-final/static/media/dd.bdd2ef278010ec8700c8.jpg",
+    "static/media/lw.jpg": "/andrea-final/static/media/lw.ce9d51285aa208d4a959.jpg",
+    "index.html": "/andrea-final/index.html",
+    "main.c2cab247.css.map": "/andrea-final/static/css/main.c2cab247.css.map",
+    "main.d39b9ee5.js.map": "/andrea-final/static/js/main.d39b9ee5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2cab247.css",
+    "static/js/main.d39b9ee5.js"
+  ]
+}
