@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Deployment
+
+This app is deployed in [Application](https://andresfdel17.github.io/andrea-final/)
+
 ## Available Scripts
 
 In the project directory, you can run:
